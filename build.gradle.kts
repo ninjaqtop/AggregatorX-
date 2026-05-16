@@ -8,6 +8,8 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "2.1.10" apply false
     // KSP version specifically for Kotlin 2.1.10
     id("com.google.devtools.ksp") version "2.1.10-1.0.29" apply false
+    // Add the dependency for the Google services Gradle plugin
+    id("com.google.gms.google-services") version "4.4.4" apply false
 }
 
 tasks.register("clean", Delete::class) {
